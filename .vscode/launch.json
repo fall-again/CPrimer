@@ -5,17 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "g++.exe - 生成和调试活动文件",
+            "name": "(gdb) Launch",
+            "preLaunchTask": "build",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": true,
             "MIMode": "gdb",
-            "miDebuggerPath": "C:\\environment\\mingw64\\bin\\gdb.exe",
+            "miDebuggerPath": "C:/environment/mingw64/bin/gdb.exe",
             "setupCommands": [
                 {
                     "description": "为 gdb 启用整齐打印",
@@ -23,7 +24,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "C/C++: g++.exe build active file"
+            
         }
     ]
 }
