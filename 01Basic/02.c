@@ -2,7 +2,7 @@
  * @Description: C语言中的常量、变量
  * @Author: HZQ
  * @Date: 2020-11-10 22:20:26
- * @LastEditTime: 2020-11-17 12:01:51
+ * @LastEditTime: 2020-11-19 08:44:20
  */
 
 /**
@@ -37,7 +37,7 @@ int main(void)
     printf("%d\n", num1);
     // num1 = 8;
     // printf("%d\n", num1);
-
+    // tests
     getchar();
     return 0;
 }
