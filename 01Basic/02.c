@@ -2,7 +2,7 @@
  * @Description: C语言中的常量、变量
  * @Author: HZQ
  * @Date: 2020-11-10 22:20:26
- * @LastEditTime: 2020-11-19 08:44:20
+ * @LastEditTime: 2021-03-28 09:24:28
  */
 
 /**
@@ -21,23 +21,47 @@
  * 4. 枚举常量
  */
 #include <stdio.h>
+#include <string.h>
+// int main(void)
+// {
+//     int num = 4;
+//     printf("%d\n", num);
+//     num = 8;
+//     printf("%d\n", num);
+//     3;
+//     100; /* 字面常量，直观写出来的值 */
 
-int main(void)
+//     /* const -常属性*/
+//     /* const修饰的常变量*/
+//     const int num1 = 4;
+//     printf("%d\n", num1);
+//     // num1 = 8;
+//     // printf("%d\n", num1);
+
+//     getchar();
+//     return 0;
+// }
+int main()
 {
-    int num = 4;
-    printf("%d\n", num);
-    num = 8;
-    printf("%d\n", num);
-    3;
-    100; /* 字面常量，直观写出来的值 */
+    // printf("%d\n", strlen("abcdef"));
+    // printf("%d\n", strlen("c:\test\328\test.c"));
+    /* 
+    \32被解析成一个转义字符
+    \ddd 转义为一个八进制数
+    \xdd 转义为一个八进制数
+    */
 
-    /* const -常属性*/
-    /* const修饰的常变量*/
-    const int num1 = 4;
-    printf("%d\n", num1);
-    // num1 = 8;
-    // printf("%d\n", num1);
-    // tests
+    int a = -1;
+    int b = ~a; // ~ 按位取反
+    // 00000000000000000000000000000000
+    // 11111111111111111111111111111111
+    // 原码
+    // 补码
+    // 反码
+    // 负数在内存中存储的时候，存储的是二进制的补码
+    // 使用的时候，是打印这个数字的原码
+    // 补码->原码，除符号位，先减1，再按位取反
+    printf("%d\n", b); // -1 打印的时候，打印的是这个数的原码
     getchar();
     return 0;
 }
