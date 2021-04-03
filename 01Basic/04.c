@@ -8,6 +8,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 int main(void)
 {
@@ -23,18 +24,19 @@ int main(void)
     //     printf("该数字为奇数\n");
     // }
 
-    int num2;
-    for (num2 = 1; num2 <= 100; num2++)
-    {
-        if (num2 % 2 == 0)
-        {
-            //printf("该数字为偶数\n");
-        }
-        else
-        {
-            printf("%d\n", num2);
-        }
-    }
+    // int num2;
+    // for (num2 = 1; num2 <= 100; num2++)
+    // {
+    //     if (num2 % 2 == 0)
+    //     {
+    //         //printf("该数字为偶数\n");
+    //     }
+    //     else
+    //     {
+    //         printf("%d\n", num2);
+    //     }
+    // }
 
+    
     return 0;
 }
